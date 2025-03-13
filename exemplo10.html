@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo 09</title>
+    <title>Exemplo 10</title>
     <style>
         * {
             font-size: 16px;
@@ -17,13 +17,14 @@
             border: 1px solid #c9c7c7;
             box-shadow: .5rem .5rem .3rem .01rem #c9c7c7;
             display: flex;
+            flex-wrap: wrap;
         }
 
         .bloco {
             background-color: blue;
             color: white;
             font-weight: bold;
-            width: 5rem;
+            width: 9rem;
             height: 3rem;
             padding: 1rem;
             border-radius: .5rem;
@@ -38,26 +39,21 @@
             /*
             Estrutura sequencial
             Comandos de saida
+            Comandos de entrada
             Variavel
             Template string
             */
 
-            var num1, num2, soma, subtracao, multiplicacao, divisao, resto;
+            var num;
 
-            num1 = parseInt(prompt("Informe o primeiro numero:"));
-            num2 = parseInt(prompt("Informe o segundo numero:"));
+            num = parseInt(prompt("Informe o primeiro numero:"));
 
-            soma = num1 + num2;
-            subtracao = num1 - num2;
-            multiplicacao = num1 * num2;
-            divisao = num1 / num2;
-            resto = num1 % num2;
-
-            document.write(`<div class="bloco">${num1} + ${num2} = ${soma} </div>`);
-            document.write(`<div class="bloco">${num1} - ${num2} = ${subtracao} </div>`);
-            document.write(`<div class="bloco">${num1} * ${num2} = ${multiplicacao} </div>`);
-            document.write(`<div class="bloco">${num1} / ${num2} = ${divisao} </div>`);
-            document.write(`<div class="bloco">${num1} % ${num2} = ${resto} </div>`);
+            document.write(`<div class="bloco">${num} ^ 2 = ${Math.pow(num, 2)} </div>`);
+            document.write(`<div class="bloco">log_2${num} = ${Math.log2(num).toFixed(2)} </div>`);
+            document.write(`<div class="bloco">raiz${num} = ${Math.sqrt(num)} </div>`);
+            document.write(`<div class="bloco">raiz${num} = ${Math.pow(num, .5)} </div>`);
+            document.write(`<div class="bloco">log_10${num} = ${Math.log10(num).toFixed(2)} </div>`);
+            document.write(`<div class="bloco">log_e(e) = ${Math.log(Math.E).toFixed(2)} </div>`);
         </script>
     </div>
 </body>
