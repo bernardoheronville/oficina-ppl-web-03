@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 09</title>
+    <style>
+        * {
+            font-size: 16px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .bloco {
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            width: 5rem;
+            height: 3rem;
+            padding: 1rem;
+            border-radius: .5rem;
+            margin: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <script>
+            /*
+            Estrutura sequencial
+            Comandos de saida
+            Variavel
+            Template string
+            */
+
+            var num1, num2, soma, subtracao, multiplicacao, divisao, resto;
+
+            num1 = parseInt(prompt("Informe o primeiro numero:"));
+            num2 = parseInt(prompt("Informe o segundo numero:"));
+
+            soma = num1 + num2;
+            subtracao = num1 - num2;
+            multiplicacao = num1 * num2;
+            divisao = num1 / num2;
+            resto = num1 % num2;
+
+            document.write(`<div class="bloco">${num1} + ${num2} = ${soma} </div>`);
+            document.write(`<div class="bloco">${num1} - ${num2} = ${subtracao} </div>`);
+            document.write(`<div class="bloco">${num1} * ${num2} = ${multiplicacao} </div>`);
+            document.write(`<div class="bloco">${num1} / ${num2} = ${divisao} </div>`);
+            document.write(`<div class="bloco">${num1} % ${num2} = ${resto} </div>`);
+        </script>
+    </div>
+</body>
+
+</html>

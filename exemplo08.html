@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 08</title>
+</head>
+<body>
+    <script>
+        /*
+        Estrutura sequencial
+        Comandos de saida
+        Variavel
+        Template string
+        */
+       
+        var num1, num2, soma, subtracao, multiplicacao, divisao, resto;
+
+        num1 = parseFloat(prompt("Informe o primeiro numero:"));
+        num2 = parseFloat(prompt("Informe o segundo numero:"));
+
+        soma = num1 + num2;
+        subtracao = num1 - num2;
+        multiplicacao = num1 * num2;
+        divisao = num1 / num2;
+        resto = num1 % num2;
+
+        document.write(`${num1} + ${num2} = ${soma} <br>`);
+        document.write(`${num1} - ${num2} = ${subtracao} <br>`);
+        document.write(`${num1} * ${num2} = ${multiplicacao} <br>`);
+        document.write(`${num1} / ${num2} = ${divisao} <br>`);
+        document.write(`${num1} % ${num2} = ${resto} <br>`);
+    </script>
+</body>
+</html>
